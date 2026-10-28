@@ -1,6 +1,7 @@
-  <body class="min-vh-100 bg-light d-flex flex-column">
+<?php include_once "include/head.php"; ?>
+<body class="min-vh-100 bg-light d-flex flex-column">
     <!-- Body er lavet med minimum højde på 100 viewport height, og som lodret flexbox, så main-området kan udvides til at fylde hele højden -->
-    
+    <?php include_once "include/header.php"; ?>
     <main class="container my-5 flex-grow-1">
         <!-- Main indholdet er lavet som en bootstrap container, der har en margin i top og bund på 5 og en flex-grow på 1, så den kan udvide sig til at fylde hele højden, hvis siden i sig selv ikke fylder hele højden (som fx login.php) -->
         <h2 class="mb-4">Nyeste opskrifter</h2>
@@ -105,6 +106,7 @@
             </article>
         </section>
     </main>
-
+<?php include "include/footer.php"; ?>
   </body>
+
 </html>
